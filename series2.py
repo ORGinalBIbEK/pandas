@@ -8,4 +8,5 @@ print(series.loc["Day 1"]) #we can also access the values of the series using th
 series.loc["Day 4"]=1300 #we can also add new values to the series using the loc method.
 print(series)
 series.loc["Day 2"]+=50
+print(series[series>=1200]) #print the values in the series that are greater than or equal to 1200
 print(series)
