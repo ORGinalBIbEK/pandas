@@ -13,4 +13,12 @@ print(df.iloc[0])
 
 #add new column to the dataframe
 df["City"]=["Kathmandu","Lalitpur","Bhaktapur"]
+print(df)
 
+#add new row to the dataframe
+new_row = pd.DataFrame([{"Name":"Suman","Age": 35, "City": "Pokhara"}], 
+                       index=["d"])
+multiple_rows = pd.DataFrame([{"Name":"Sarthak", "Age":30, "City":"kanchanpur"},
+                              {"Name":"Achyut","Age": 28, "City":"Dharan"}],index=["e","f"])
+df=pd.concat([df,new_row,multiple_rows])
+print(df)
